@@ -43,7 +43,7 @@ renderDirTree
     => GenDirTree Abs str
         -- ^ A tree of files
     -> (Path Abs File -> str -> m ())
-        -- ^ The function thaat determines an action for every file.
+        -- ^ The function that determines an action for every file.
     -> m ()
 renderDirTree dt func = do
     mapM_ ensureDir $ nub $ map (\(GenFile p _) -> parent p) dt
