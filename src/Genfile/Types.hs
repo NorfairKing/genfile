@@ -1,1 +1,0 @@
-module Genfile.Types where
